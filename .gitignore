@@ -12,3 +12,7 @@ wheels/
 uv.lock
 /*.py
 .python-version
+token_files/
+
+*.env
+*.json
