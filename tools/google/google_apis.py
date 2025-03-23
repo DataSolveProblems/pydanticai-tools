@@ -8,6 +8,10 @@ from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 
+logging.getLogger('googleapiclient.discovery').setLevel(logging.ERROR)
+logging.getLogger("openai").setLevel(logging.ERROR)
+logging.getLogger("httpx").setLevel(logging.ERROR)
+
 def setup_logger(logger_name: str = None):
     if logger_name is None:
         logger_name = __name__
